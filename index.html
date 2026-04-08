@@ -47,22 +47,9 @@
       object-fit: contain;
       flex-shrink: 0;
     }
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .brand-name {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1.2;
-    }
-    .brand-sub {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--muted);
-    }
+    .brand { display: flex; flex-direction: column; gap: 4px; }
+    .brand-name { font-size: 22px; font-weight: 700; color: var(--navy); line-height: 1.2; }
+    .brand-sub { font-size: 14px; font-weight: 400; color: var(--muted); }
     .enroll-pill {
       margin-left: auto;
       background: var(--blue);
@@ -84,13 +71,7 @@
       position: relative;
       overflow: hidden;
     }
-    /* decorative circles */
-    .hero-circle {
-      position: absolute;
-      border-radius: 50%;
-      border: 1px solid rgba(255,255,255,.1);
-      pointer-events: none;
-    }
+    .hero-circle { position: absolute; border-radius: 50%; border: 1px solid rgba(255,255,255,.1); pointer-events: none; }
     .hc1 { width: 500px; height: 500px; top: -200px; right: -150px; }
     .hc2 { width: 300px; height: 300px; bottom: -100px; left: -80px; }
 
@@ -109,13 +90,7 @@
       border-radius: 999px;
       margin-bottom: 28px;
     }
-    .hero-tag-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: #60efff;
-      flex-shrink: 0;
-    }
-
+    .hero-tag-dot { width: 8px; height: 8px; border-radius: 50%; background: #60efff; flex-shrink: 0; }
     .hero h1 {
       font-family: 'Fraunces', serif;
       color: #fff;
@@ -126,7 +101,6 @@
       letter-spacing: -.02em;
     }
     .hero h1 em { color: #93c5fd; font-style: italic; }
-
     .hero-desc {
       color: rgba(255,255,255,.76);
       font-size: 19px;
@@ -135,21 +109,8 @@
       margin: 0 auto 44px;
       line-height: 1.7;
     }
-
-    .trust-row {
-      display: flex;
-      justify-content: center;
-      gap: 48px;
-      flex-wrap: wrap;
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: rgba(255,255,255,.85);
-      font-size: 15.5px;
-      font-weight: 500;
-    }
+    .trust-row { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.85); font-size: 15.5px; font-weight: 500; }
     .trust-item svg { width: 20px; height: 20px; flex-shrink: 0; color: #93c5fd; }
 
     /* ───── CARD ───── */
@@ -165,14 +126,10 @@
       background: var(--white);
       border-radius: 24px;
       border: 1.5px solid var(--border);
-      box-shadow:
-        0 0 0 1px rgba(30,86,217,.04),
-        0 4px 16px rgba(12,36,97,.06),
-        0 28px 72px rgba(12,36,97,.14);
+      box-shadow: 0 0 0 1px rgba(30,86,217,.04), 0 4px 16px rgba(12,36,97,.06), 0 28px 72px rgba(12,36,97,.14);
       padding: 52px 56px 56px;
       position: relative;
     }
-    /* top accent bar */
     .card::before {
       content: '';
       position: absolute;
@@ -194,38 +151,22 @@
       color: var(--blue);
       margin-bottom: 28px;
     }
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
     .section-num {
       width: 26px; height: 26px;
       border-radius: 50%;
       background: var(--pale);
       border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--blue);
-      flex-shrink: 0;
+      font-size: 12px; font-weight: 700; color: var(--blue); flex-shrink: 0;
     }
 
     /* ───── FIELDS ───── */
     .field { margin-bottom: 26px; }
-    .field-label {
-      display: block;
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
+    .field-label { display: block; font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
     .req { color: var(--blue); margin-left: 2px; }
 
-    input[type="text"],
-    input[type="tel"],
-    textarea {
+    input[type="text"], input[type="tel"], textarea {
       width: 100%;
       border: 1.5px solid var(--border);
       border-radius: var(--r);
@@ -238,13 +179,8 @@
       outline: none;
       line-height: 1.4;
     }
-    input::placeholder, textarea::placeholder {
-      color: #b0c0de;
-      font-weight: 400;
-    }
-    input[type="text"]:focus,
-    input[type="tel"]:focus,
-    textarea:focus {
+    input::placeholder, textarea::placeholder { color: #b0c0de; font-weight: 400; }
+    input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
       border-color: var(--sky);
       background: var(--white);
       box-shadow: 0 0 0 4px rgba(59,130,246,.12);
@@ -255,27 +191,16 @@
     .mode-group { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .mode-radio { display: none; }
     .mode-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 22px 16px;
-      border: 1.5px solid var(--border);
-      border-radius: var(--r);
-      cursor: pointer;
-      font-size: 17px;
-      font-weight: 600;
-      color: var(--muted);
-      background: var(--bg);
-      transition: all .2s;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 10px; padding: 22px 16px;
+      border: 1.5px solid var(--border); border-radius: var(--r);
+      cursor: pointer; font-size: 17px; font-weight: 600; color: var(--muted);
+      background: var(--bg); transition: all .2s;
     }
     .mode-card svg { width: 28px; height: 28px; flex-shrink: 0; }
     .mode-card span { font-size: 13px; font-weight: 400; color: #8ca0c8; margin-top: -4px; }
     .mode-radio:checked + .mode-card {
-      border-color: var(--blue);
-      background: var(--pale);
-      color: var(--blue);
+      border-color: var(--blue); background: var(--pale); color: var(--blue);
       box-shadow: 0 0 0 4px rgba(30,86,217,.1);
     }
     .mode-radio:checked + .mode-card svg { color: var(--blue); }
@@ -284,110 +209,65 @@
     .divider { border: none; border-top: 1.5px solid var(--border); margin: 36px 0; }
 
     /* ───── BUTTONS ───── */
-    .btn-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 36px;
-    }
+    .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; }
     .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 18px 16px;
-      border-radius: var(--r);
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 17px;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      transition: all .22s;
-      text-decoration: none;
-      letter-spacing: .01em;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 18px 16px; border-radius: var(--r);
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 700;
+      cursor: pointer; border: none; transition: all .22s; text-decoration: none; letter-spacing: .01em;
     }
     .btn-primary {
       background: linear-gradient(130deg, #1648c8 0%, #2563eb 60%, #3b82f6 100%);
-      color: #fff;
-      box-shadow: 0 6px 28px rgba(30,86,217,.38);
+      color: #fff; box-shadow: 0 6px 28px rgba(30,86,217,.38);
     }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 36px rgba(30,86,217,.48);
-      filter: brightness(1.07);
-    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(30,86,217,.48); filter: brightness(1.07); }
     .btn-primary:active { transform: translateY(0); }
-
-    .btn-secondary {
-      background: var(--white);
-      color: var(--navy);
-      border: 1.5px solid var(--border);
-    }
-    .btn-secondary:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-      background: var(--pale);
-    }
+    .btn-secondary { background: var(--white); color: var(--navy); border: 1.5px solid var(--border); }
+    .btn-secondary:hover { border-color: var(--blue); color: var(--blue); background: var(--pale); }
     .btn svg { width: 19px; height: 19px; flex-shrink: 0; }
 
-    /* loading */
     .btn-primary.loading { opacity: .72; pointer-events: none; }
     .spinner {
       width: 18px; height: 18px;
-      border: 2.5px solid rgba(255,255,255,.3);
-      border-top-color: #fff;
-      border-radius: 50%;
-      animation: spin .6s linear infinite;
-      display: none;
+      border: 2.5px solid rgba(255,255,255,.3); border-top-color: #fff;
+      border-radius: 50%; animation: spin .6s linear infinite; display: none;
     }
     .loading .spinner { display: block; }
     .loading .btn-label { display: none; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
+    /* ───── STATUS MESSAGE ───── */
+    .status-msg {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 18px;
+      border-radius: var(--r);
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    .status-msg.error { background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; display: flex; }
+    .status-msg svg { width: 18px; height: 18px; flex-shrink: 0; }
+
     /* ───── SUCCESS ───── */
     .success-box {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 36px 0 20px;
-      gap: 18px;
+      display: none; flex-direction: column; align-items: center;
+      text-align: center; padding: 36px 0 20px; gap: 18px;
     }
     .success-box.show { display: flex; }
     .success-icon {
-      width: 88px; height: 88px;
-      border-radius: 50%;
-      background: #d1fae5;
-      border: 2px solid #6ee7b7;
+      width: 88px; height: 88px; border-radius: 50%;
+      background: #d1fae5; border: 2px solid #6ee7b7;
       display: flex; align-items: center; justify-content: center;
     }
     .success-icon svg { width: 42px; height: 42px; color: var(--green); }
-    .success-box h2 {
-      font-family: 'Fraunces', serif;
-      font-size: 30px;
-      font-weight: 900;
-      color: var(--navy);
-    }
-    .success-box p {
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.7;
-      max-width: 400px;
-    }
-    .success-box .btn-secondary {
-      margin-top: 8px;
-      padding: 14px 32px;
-      width: auto;
-    }
+    .success-box h2 { font-family: 'Fraunces', serif; font-size: 30px; font-weight: 900; color: var(--navy); }
+    .success-box p { color: var(--muted); font-size: 18px; line-height: 1.7; max-width: 400px; }
+    .success-box .btn-secondary { margin-top: 8px; padding: 14px 32px; width: auto; }
 
     /* ───── FOOTNOTE ───── */
-    .footnote {
-      text-align: center;
-      font-size: 14px;
-      color: var(--muted);
-      margin-top: 28px;
-      line-height: 1.65;
-    }
+    .footnote { text-align: center; font-size: 14px; color: var(--muted); margin-top: 28px; line-height: 1.65; }
     .footnote a { color: var(--blue); text-decoration: none; font-weight: 500; }
     .footnote a:hover { text-decoration: underline; }
 
@@ -408,7 +288,7 @@
 </head>
 <body>
 
-<!-- ── HEADER ── -->
+<!-- HEADER -->
 <header>
   <img src="images/logo.png" alt="IT Skills Training Nepal" class="logo-img" />
   <div class="brand">
@@ -418,45 +298,30 @@
   <div class="enroll-pill">Now Enrolling</div>
 </header>
 
-<!-- ── HERO ── -->
+<!-- HERO -->
 <div class="hero">
   <div class="hero-circle hc1"></div>
   <div class="hero-circle hc2"></div>
-
-  <div class="hero-tag">
-    <div class="hero-tag-dot"></div>
-    Free Counseling Session
-  </div>
-
+  <div class="hero-tag"><div class="hero-tag-dot"></div>Free Counseling Session</div>
   <h1>Book Your <em>Seat</em><br/>Today</h1>
-
-  <p class="hero-desc">
-    Fill out the form below and our expert team will reach out to confirm your session and walk you through the course.
-  </p>
-
+  <p class="hero-desc">Fill out the form below and our expert team will reach out to confirm your session and walk you through the course.</p>
   <div class="trust-row">
     <div class="trust-item">
-      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-      </svg>
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
       Expert Instructors
     </div>
     <div class="trust-item">
-      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-      </svg>
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
       Hands-on Curriculum
     </div>
     <div class="trust-item">
-      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-      </svg>
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
       Job-Ready Skills
     </div>
   </div>
 </div>
 
-<!-- ── CARD ── -->
+<!-- CARD -->
 <div class="card-wrap">
   <div class="card">
 
@@ -473,16 +338,13 @@
     </div>
 
     <!-- FORM -->
-    <form id="bookingForm" action="https://formspree.io/f/mwvwznlo" method="POST" novalidate>
+    <form id="bookingForm" novalidate>
 
-      <div class="section-label">
-        <div class="section-num">1</div>
-        Personal Details
-      </div>
+      <div class="section-label"><div class="section-num">1</div>Personal Details</div>
 
       <div class="field">
-        <label class="field-label" for="name">Full Name <span class="req">*</span></label>
-        <input type="text" id="name" name="name" placeholder="e.g. Ram Kumar Shrestha" required />
+        <label class="field-label" for="fname">Full Name <span class="req">*</span></label>
+        <input type="text" id="fname" name="name" placeholder="e.g. Ram Kumar Shrestha" required />
       </div>
 
       <div class="field">
@@ -497,10 +359,7 @@
 
       <hr class="divider" />
 
-      <div class="section-label">
-        <div class="section-num">2</div>
-        Class Preferences
-      </div>
+      <div class="section-label"><div class="section-num">2</div>Class Preferences</div>
 
       <div class="field">
         <label class="field-label">Mode of Class <span class="req">*</span></label>
@@ -508,13 +367,11 @@
           <input type="radio" name="mode" id="modeOnline" value="Online" class="mode-radio" required />
           <label for="modeOnline" class="mode-card">
             <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <rect x="2" y="3" width="20" height="14" rx="2"/>
-              <path stroke-linecap="round" d="M8 21h8M12 17v4"/>
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path stroke-linecap="round" d="M8 21h8M12 17v4"/>
             </svg>
             Online
             <span>Learn from anywhere</span>
           </label>
-
           <input type="radio" name="mode" id="modePhysical" value="Physical" class="mode-radio" />
           <label for="modePhysical" class="mode-card">
             <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
@@ -531,8 +388,13 @@
         <textarea id="timing" name="preferred_timing" placeholder="e.g. Weekday mornings 7–9 AM, Saturday afternoons, evenings only…" required></textarea>
       </div>
 
-      <input type="hidden" name="_subject" value="New Counseling Booking – IT Skills Training Nepal" />
-      <input type="hidden" name="_replyto" value="itskillstrainingnepal@gmail.com" />
+      <!-- error message -->
+      <div class="status-msg" id="errorMsg">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <span id="errorText">Something went wrong. Please try again.</span>
+      </div>
 
       <div class="btn-row">
         <button type="submit" class="btn btn-primary" id="submitBtn">
@@ -564,12 +426,27 @@
 </div>
 
 <script>
-  const form       = document.getElementById('bookingForm');
-  const submitBtn  = document.getElementById('submitBtn');
-  const successBox = document.getElementById('successBox');
+  // ── endpoints ──────────────────────────────────────────
+  const FORMSPREE   = 'https://formspree.io/f/mwvwznlo';
+  const GSHEET      = 'https://script.google.com/macros/s/AKfycbwMbR0HB-IuHnxGFbCCog7hTWN6Jm_IwEWK8tjowXk2LZI1Tu2fVyOo4FRwG_OpGUNS/exec';
+
+  const form        = document.getElementById('bookingForm');
+  const submitBtn   = document.getElementById('submitBtn');
+  const successBox  = document.getElementById('successBox');
+  const errorMsg    = document.getElementById('errorMsg');
+  const errorText   = document.getElementById('errorText');
+
+  function showError(msg) {
+    errorText.textContent = msg;
+    errorMsg.className = 'status-msg error';
+  }
+  function hideError() {
+    errorMsg.className = 'status-msg';
+  }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    hideError();
 
     const name    = form.name.value.trim();
     const address = form.address.value.trim();
@@ -578,27 +455,56 @@
     const timing  = form.preferred_timing.value.trim();
 
     if (!name || !address || !contact || !mode || !timing) {
-      alert('Please fill in all required fields before submitting.');
+      showError('Please fill in all required fields before submitting.');
       return;
     }
 
     submitBtn.classList.add('loading');
 
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
+    const payload = {
+      name,
+      address,
+      contact,
+      mode: mode.value,
+      preferred_timing: timing,
+      submitted_at: new Date().toLocaleString('en-NP', { timeZone: 'Asia/Kathmandu' })
+    };
 
-      if (res.ok) {
+    try {
+      // Send to both Formspree (email) and Google Sheets simultaneously
+      const [fsRes] = await Promise.all([
+
+        // 1️⃣ Formspree — sends email notification
+        fetch(FORMSPREE, {
+          method: 'POST',
+          body: (() => {
+            const fd = new FormData();
+            Object.entries(payload).forEach(([k, v]) => fd.append(k, v));
+            fd.append('_subject', 'New Counseling Booking – IT Skills Training Nepal');
+            fd.append('_replyto', 'itskillstrainingnepal@gmail.com');
+            return fd;
+          })(),
+          headers: { 'Accept': 'application/json' }
+        }),
+
+        // 2️⃣ Google Sheets — logs the data
+        fetch(GSHEET, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+      ]);
+
+      if (fsRes.ok) {
         form.style.display = 'none';
         successBox.classList.add('show');
       } else {
-        alert('Something went wrong. Please try again or email us directly.');
+        showError('Submission failed. Please try again or email us directly.');
       }
-    } catch {
-      alert('Network error. Please check your connection and try again.');
+
+    } catch (err) {
+      showError('Network error. Please check your connection and try again.');
     } finally {
       submitBtn.classList.remove('loading');
     }
@@ -606,6 +512,7 @@
 
   function resetForm() {
     form.reset();
+    hideError();
     form.style.display = 'block';
     successBox.classList.remove('show');
   }
